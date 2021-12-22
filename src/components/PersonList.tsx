@@ -1,9 +1,4 @@
-type PersonListProps = {
-  names: {   // 这里是针对的数组操作
-    first: string,
-    last: string
-  }[]
-}
+import { PersonListProps } from './PersonList.types'
 
 export const PersonList = (props:PersonListProps) => {
   return <div>
