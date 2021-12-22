@@ -1,13 +1,11 @@
 import './App.css';
-import {Button} from './components/Button';
-import {Input} from './components/Input';
+import { Container } from './components/Container';
 function App() {
   return (
     <div className="App">
-      <Input value='' handleChange={e => console.log(e)}/>
-      <Button handleClick={(e, id) => {
-        console.log('Button clicked', e, id);
-      }}/>
+      {/* 此时，如果你乱输入style的样式，会报错... */}
+      {/* 这种方法在检验你的样式是否有误的优势是非常大的 */}
+      <Container styles={{border: '1px solid black', padding: '1rem'}}/>
     </div>
   );
 }
