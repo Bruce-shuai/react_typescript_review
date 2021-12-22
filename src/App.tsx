@@ -1,17 +1,9 @@
 import './App.css';
-import { Box } from './components/context/Box';
-import { User } from './components/context/User';
-import { UserContextProvider } from './components/context/UserContext';
-import { ThemeContextProvider } from './components/context/ThemeContext';
+import {Counter} from './components/class/Counter';
 function App() {
   return (
     <div className="App">
-      <UserContextProvider>
-      <ThemeContextProvider>
-        <Box />
-        <User />
-      </ThemeContextProvider>
-      </UserContextProvider>
+      <Counter message="测试测试"/>
     </div>
   );
 }
