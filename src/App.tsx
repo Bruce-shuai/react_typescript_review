@@ -1,11 +1,31 @@
 import './App.css';
-import {Private} from './components/auth/Private';
-import {Profile} from './components/auth/Profile';
+import { List } from './components/generics/List';
 function App() {
   return (
     <div className="App">
-      {/* 这里直接进行组件作为属性进行传递 */}
-      <Private isLoggedIn={true} Component={Profile}/>
+      {/* <List
+        items={['Batman', 'Superhero', 'Wonder Woman']}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+      <List 
+        items={[
+          {
+            id: 1,
+            first: 'Bruce',
+            last: 'Wayne'
+          }, 
+          {
+            id: 2,
+            first: 'Clark',
+            last: 'Kent'
+          }, 
+          {
+            id: 3,
+            first: 'Princess',
+            last: 'Diana'
+          }
+        ]} onClick={(item) => console.log(item)} />
     </div>
   );
 }
