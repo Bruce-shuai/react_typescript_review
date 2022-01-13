@@ -1,11 +1,12 @@
 import './App.css';
-import { RandomNumber } from './components/restriction/RandomNumber';
+import {CustomButton} from './components/html/Button';
 function App() {
   return (
     <div className="App">
-      {/* isPositive isNegative isZero不给值就默认为true */}
-      {/* 这里做了限制，isPositive isNegative isZero 三者只能选其一 */}
-      <RandomNumber value={10} isPositive />
+      <CustomButton variant="primary" onClick={() => {console.log('Clicked')}}>
+        {/* <div>Primary Button</div> */}
+          Primary
+      </CustomButton>
     </div>
   );
 }
