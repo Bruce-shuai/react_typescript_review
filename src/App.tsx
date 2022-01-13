@@ -1,12 +1,11 @@
 import './App.css';
-import {CustomButton} from './components/html/Button';
+import { Text } from './components/polymorphic/Text';
 function App() {
   return (
     <div className="App">
-      <CustomButton variant="primary" onClick={() => {console.log('Clicked')}}>
-        {/* <div>Primary Button</div> */}
-          Primary
-      </CustomButton>
+      <Text as='a' size="lg">Heading</Text>
+      <Text as='p' size="md">Paragraph</Text>
+      <Text as='label' size="sm" color="secondary">Label</Text>
     </div>
   );
 }
